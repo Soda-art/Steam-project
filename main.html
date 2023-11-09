@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Header-->
+    <div id="header">
+        <div class="content">
+            <div class="logo">
+                <span id="logo_holder">
+                    <a href="https://store.steampowered.com/?snr=1_4_4__global-header">
+                        <img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44">
+                    </a>
+                </span>
+            </div>
+        <div class="supernav_container">
+            <a class="menuitem" href="https://store.steampowered.com/?snr=1_4_4__global-header">Cửa hàng</a>
+            <a class="menuitem" href="https://steamcommunity.com/" style="display:block">Cộng đồng</a>
+            <a class="menuitem" href="https://store.steampowered.com/about/?snr=1_4_4__global-header">Thông tin</a>
+            <a class="menuitem" href="https://help.steampowered.com/vn/">Hỗ trợ</a>
+            <div class="supernav_content">
+                <div class="submenu_store">
+                    <a class="submenuitem" href="https://store.steampowered.com/?snr=1_4_4__global-header">Trang chủ</a>
+                    <a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_4_4__global-header">Hàng khám phá</a>
+                    <a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">Danh sách ước</a>
+                    <a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_4_4__global-header">Cửa hàng điểm</a>
+                    <a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_4_4__global-header">Tin tức</a>
+                    <a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_4_4__global-header">Thống kê</a>
+                </div>
+            </div>
+            <div class="supernav_content" style="position: absolute; z-index: 1500; opacity: 0; left: 99.4219px; top: 67px; pointer-events: none;">
+                <div class="submenu_community">
+                    <a class="submenuitem" href="https://steamcommunity.com/">Trang chủ</a>
+                    <a class="submenuitem" href="https://steamcommunity.com/discussions/">Thảo luận</a>
+                    <a class="submenuitem" href="https://steamcommunity.com/workshop/">Workshop</a>
+                    <a class="submenuitem" href="https://steamcommunity.com/market/">Chợ</a>
+                    <a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Phát sóng</a>
+                </div>
+            </div>
+        </div>
+        <div id="actions">
+            <div id="action_menu">
+                <a class="header_installsteam_btn green" href="https://store.steampowered.com/about/?snr=1_4_4__global-header">
+                    <div class="header_installsteam_btn_content">Cài đặt Steam</div>
+                </a>
+                <a class="action_link" href="https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header">đăng nhập</a>
+                 &nbsp; |&nbsp;
+                <span class="pulldown action_link" id="languages_pulldown">ngôn ngữ</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-----------------------------------------Body---------------------------------------->
+    <div class="template_content">
+        <div class="home_page_wrapper">
+            <div class="home_page_content gutter_outside">
+                <div class="home_page_gutter">
+                    <div class="home_page_gutter_block">
+                        <a class="top_promo" href="https://store.steampowered.com/digitalgiftcards/?snr=1_4_4__125">
+                            <div class="gutter_header gutter_top">
+                                <img class="home_page_gutter_top" src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1">
+                                <br>Thẻ quà tặng Steam
+                            </div>
+                            <div class="promo_text">Tặng trò chơi dưới dạng quà</div>
+                        </a>
+                        <div class="home_page_gutter_block" id="home_gutter_recentlyviewed" style="display:none">
+                            <div class="gutter_header pad">Đã xem gần đây</div>
+                            <div class="gutter_items"></div>
+                        </div>
+                        <div class="home_page_gutter_block" id="home_gutter_recommendedtags" style="display: none;">
+                            <div class="gutter_header pad">Nhãn của bạn</div>
+                            <div class="gutter_items"></div>
+                        </div>
+                        <div class="gutter_header">Nên Xem</div>
+                        <!-- <div class="gutter_items">
+                            <a class="gutter_item" href="https://store.steampowered.com/recommended/friendactivity/?snr=1_4_4__125">Bởi bạn bè</a>
+                            <a class="gutter_item" href="https://store.steampowered.com/curators/?snr=1_4_4__125">Thẩm định viên</a>
+                            <a class="gutter_item" href="https://store.steampowered.com/tag/browse/?snr=1_4_4__125#yours">Theo nhãn</a>
+                        </div> -->
+                        <div class="gutter_header pad">Duyệt theo danh mục</div>
+                        <!-- <div class="gutter_items">
+                            <a class="gutter_item" href="#">Bán chạy</a>
+                            <a class="gutter_item" href="#">Mới ra mắt</a>
+                            <a class="gutter_item" href="#">Sắp ra</a>
+                            <a class="gutter_item" href="#">Ưu đãi</a>
+                            <a class="gutter_item" href="#">Các tựa VR</a>
+                            <a class="gutter_item" href="#">Thân thiện với tay cầm</a>
+                            <a class="gutter_item" href="#">Tuyệt trên deck</a>
+                        </div> -->
+                    </div>
+                    <div class="home_page_gutter_block">
+                        <div class="gutter_header pad">Duyệt theo thể loại</div>
+                        <a class="gutter_item action" href="?genres=action">action</a>
+                        <a class="gutter_item free_to_play" href="?genres=free to play">free to play</a>
+                        <a class="gutter_item strategy" href="?genres=strategy">strategy</a>
+                        <a class="gutter_item adventure" href="?genres=adventure">adventure</a>
+                        <a class="gutter_item indie" href="?genres=indie">Indie</a>
+                        <a class="gutter_item rpg" href="?genres=rpg">rpg</a>
+                        <!-- <a class="gutter_item animation_modeling" href="?genres=animation modeling">animation & modeling</a> -->
+                        <a class="gutter_item video_production" href="?genres=video production">video production</a>
+                        <a class="gutter_item casual" href="?genres=casual">casual</a>
+                        <a class="gutter_item simulation" href="?genres=simulation">simulation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home_page_body_ctn">
+                <div class="static_takeover_ctn">
+                    <div class="page_background_holder"></div>
+                </div>
+                <div class="home_page_content">
+                    <div class="responsive_store_nav_ctn_spacer">
+                        <div id="store_header">
+                            <div class="content">
+                                <div id="store_controls">
+                                    <div class="cart_status_flex" id="cart_status_data">
+                                        <div class="stone_header_btn_green store_header_btn" id="store_header_cart_btn" style="display: none;">
+                                            <div class="store_header_btn_caps store_header_btn_leftcap"></div>
+                                            <div class="store_header_btn_caps store_header_btn_rightcap"></div>
+                                            <a class="store_header_btn_content" id="cart_link" href="https://store.steampowered.com/cart/?snr=1_4_4__12">Giỏ ( <span id="cart_item_count_value">0</span>)
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="store_nav_area">
+                                    <div class="store_nav_leftcap"></div>
+                                    <div class="store_nav_bg">
+                                        <div class="store_nav">
+                                            <div class="tab flyout_tab" id="foryou_tab">
+                                                <span class="pulldown">
+                                                    <a class="pulldown_desktop" href="https://store.steampowered.com/?snr=1_4_4__12">Cửa hàng của bạn</a>
+                                                    <span></span>
+                                                </span>
+                                            </div>
+                                            <div class="tab flyout_tab" id="noteworthy_tab">
+                                                <span class="pulldown">
+                                                    <a class="pulldown_desktop" href="">Mới & Đáng chú ý</a>
+                                                    <span></span>
+                                                </span>
+                                            </div>
+                                            <div class="tab flyout_tab" id="genre_tab">
+                                                <span class="pulldown">
+                                                    <a class="pulldown_desktop" href="">Danh mục</a>
+                                                    <span></span>
+                                                </span>
+                                            </div>
+                                            <a class="tab" href="https://store.steampowered.com/points/?snr=1_4_4__12">
+                                                <span>Cửa hàng điểm</span>
+                                            </a>
+                                            <a class="tab" href="https://store.steampowered.com/news/?snr=1_4_4__12">
+                                                <span>Tin tức</span>
+                                            </a>
+                                            <a class="tab" href="https://store.steampowered.com/labs/?snr=1_4_4__12">
+                                                <span>Labs</span>
+                                            </a>
+                                            <div class="search_flex_spacer"></div>
+                                            <div class="search_area">
+                                                <div class="store_search">
+                                                    <form action="https://store.steampowered.com/search/" id="searchform" name="searchform" method="get">
+                                                        <input type="hidden" name="snr" value="1_4_4__12">
+                                                        <div class="searchbox">
+                                                            <input type="text" id="store_nav_search_term" name="term" class="default" placeholder="Tìm kiếm" size="22" autocomplete="off" maxlength="64">
+                                                            <a href="#" id="store_search_link" onclick="searchAction()">
+                                                                <img src="search.png">
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="searchterm_options"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="store_nav_rightcap"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_page_takeover_link">
+                    <a class="home_page_takeover_sizer app_imperssion_tracker" href="https://store.steampowered.com/app/2399830?snr=1_4_4__118&snr=1_4_4__118" style="height: 385px;">
+                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"></a>
+                </div>
+                <div class="show_game" id="display">
+                    <div id="render_display">
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1554408611" >
+                                <div class="game_info">
+                                    <p>DOTA 2</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1554409309" >
+                                <div class="game_info">
+                                    <p>Counter-Strike: Global Offensive</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/218620/header.jpg?t=1541531328" >
+                                <div class="game_info">
+                                    <p>PAYDAY 2</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/440/header.jpg?t=1539304875" >
+                                <div class="game_info">
+                                    <p>Team Fortress 2</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/304930/header.jpg?t=1540101174" >
+                                <div class="game_info">
+                                    <p>Unturned</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/4000/header.jpg?t=1535986052" >
+                                <div class="game_info">
+                                    <p>Garry's Mod</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/72850/header.jpg?t=1493767797" >
+                                <div class="game_info">
+                                    <p>The Elder Scrolls V: Skyrim</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/230410/header.jpg?t=1553809925" >
+                                <div class="game_info">
+                                    <p>Warframe</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/252950/header_alt_assets_6.jpg?t=1556125255" >
+                                <div class="game_info">
+                                    <p>Rocket League®</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_wrapper">
+                            <div class="cover">
+                                <img src="https://steamcdn-a.akamaihd.net/steam/apps/550/header.jpg?t=1540300687" >
+                                <div class="game_info">
+                                    <p>Left 4 Dead 2</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----Footer----->
+    <div id="footer_spacer" style class="small_footer">
+        <div id="footer" class="small_footer">
+            <div class="footer_content">
+                <div class="rule"></div>
+                <div class="footer_logo_steam">
+                    <img src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Valve Software" style="border: 0px;">
+                </div>
+                <div class="footer_logo">
+                    <a href="http://www.valvesoftware.com" target="_blank">
+                        <img src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve Software" style="border: 0px;">
+                    </a>
+                </div>
+                <div class="footer_logo_text">
+                    <div>© 2023 Valve Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng tại Hoa Kỳ và các quốc gia khác.</div>
+                    <div>
+                        Giá đã bao gồm VAT (nếu có) .&nbsp;&nbsp;
+                        <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel>Chính sách bảo mật</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://store.steampowered.com/legal/?snr=1_44_44_" target="_blank" rel>Pháp lý</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="_blank" rel>Thỏa thuận người đăng ký Steam</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="_blank" rel>Hoàn tiền</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_" target="_blank" rel>Về cookie</a>
+                    </div>
+                    <div style="clear: left;"></div>
+                    <br>
+                    <div class="rule"></div>
+                    <div class="valve_links">
+                        <a href="http://www.valvesoftware.com/about" target="_blank" rel="">Về Valve</a>
+                        &nbsp; | &nbsp;
+                        <a href="http://www.valvesoftware.com" target="_blank" rel="">Công việc</a>
+                        &nbsp; | &nbsp;
+                        <a href="http://www.steampowered.com/steamworks/" target="_blank" rel="">Steamworks</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="">Phân phối Steam</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://help.steampowered.com/vn/?snr=1_44_44_">Hỗ trợ</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="">Thẻ quà</a>
+                        &nbsp; | &nbsp;
+                        <a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel=" noopener">
+                            <img src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif">Steam
+                        </a>
+                        &nbsp; | &nbsp;
+                        <a href="http://twitter.com/steam" target="_blank" rel="">
+                            <img src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

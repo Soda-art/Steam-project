@@ -1,0 +1,653 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html.responsive body {
+    min-height: 100%;
+    height: auto;
+    position: relative;
+}
+
+div {
+    display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    color: #c6d4df;
+    background: url(/public/images/v6/colored_body_top.png?v=2) center top no-repeat #1b2838;
+}
+/* --------------------------Header---------------------------------------- */
+div#header {
+    height: 104px;
+    background: #171d25;
+    background-position: center top;
+    min-width: 940px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+div#header .content {
+    right: -90px;
+    position: relative;
+    background: #171d25;
+    width: 940px;
+    height: 104px;
+    margin: 0px auto;
+    z-index: 402;
+}
+
+div#header div.logo {
+    float: left;
+    padding-top: 30px;
+    margin-right: 40px;
+    width: 176px;
+    height: 44px;
+}
+
+#header .supernav_container {
+    position: absolute;
+    left: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div#header .menuitem {
+    display: block;
+    position: relative;
+    padding-top: 45px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    line-height: 16px;
+    float: left;
+    font-size: 16px;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: bold;
+}
+
+#header .menuitem:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.supernav_content {
+    background: #3D4450;
+    box-shadow: 3px 3px 5px -3px #000;
+    text-align: left;
+}
+
+#header .supernav_container .supernav_content {
+    opacity: 0;
+    position: absolute;
+    z-index: 1500;
+    left: 1px;
+    top: 67px;
+    pointer-events: none;
+}
+
+#header .supernav_container #test:hover {
+    color: red;
+}
+
+#header .supernav_container a:hover  {
+    /* opacity: 1;
+    position: absolute;
+    z-index: 1500;
+    left: 1px;
+    top: 67px;
+    pointer-events: none; */
+    color: red;
+}
+
+div.header .submenuitem {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 12px;
+    color: #dcdedf;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.supernav_content a.submenuitem {
+    display: block;
+    padding: 6px;
+}
+
+div#actions {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    height: 21px;
+    line-height: 21px;
+    color: #b8b6b4;
+    font-size: 11px;
+    z-index: 401;
+}
+
+div#actions #action_menu {
+    line-height: 24px;
+    vertical-align:top;
+    display: inline-block;
+}
+
+div#actions .action_link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#action_menu > * {
+    vertical-align: top;
+}
+
+.header_installsteam_btn {
+    display: inline-block;
+    position: relative;
+    height: 21px;
+    line-height: 24px;
+    margin-right: 3px;
+}
+
+.header_installsteam_btn_content {
+    background-color: #5c7e10;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #e5e4dc;
+    font-weight: normal;
+}
+
+.header_installsteam_btn_content:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div#actions a.action_link {
+    color: #b8b6b4;
+    padding: 0 4px;
+}
+
+.pulldown {
+    padding-left: 5px;
+    padding-right: 18px;
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/*------------------------------BODY--------------------------------------------------*/
+div#template_content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%
+}
+
+img {
+    border: none;
+}
+
+.home_page_content {
+    padding-left: 234px;
+    transition: padding 0.25s;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+.home_page_gutter {
+    display: block;
+    width: 210px;
+    overflow: hidden;
+    transition: width 0.25s;
+    position: absolute;
+    left: -300px;
+    padding-top: 31px;
+    z-index: 2;
+    top: 450px;
+}
+
+.home_page_gutter_block {
+    background: none;
+    padding-left: 0px;
+    width: 210px;
+    margin-bottom: 20px;
+}
+
+.home_page_gutter_block .promo_text {
+    color: #7A8B9D;
+}
+
+.home_page_gutter_top {
+    max-width: 85%;
+    margin-bottom: 6px;
+}
+
+
+.gutter_header {
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #536f86;
+    margin: 7px 0;
+}
+
+.gutter_header .pad {
+    margin-top: 20px;
+}
+.gutter_header .gutter_top {
+    margin: 0 0 2px 0;
+    color: #88bde9;
+}
+
+#home_gutter_recentlyviewed .pad {
+    margin: 0px;
+    margin-bottom: 7px;
+}
+
+a.gutter_item {
+    line-height: 16px;
+    margin: 2px 0;
+    display: block;
+    width: fit-content;
+    color: #7A8B9D;
+    font-size: 14px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+
+a.gutter_item:hover {
+    text-decoration: none;
+    color: #66c0f4;
+}
+/*---Body Background--------*/
+.page_background_holder {
+    position: absolute;
+    width: 100%;
+    top: 104px;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 450px; 
+    background-image: url('https://cdn.akamai.steamstatic.com/steam/clusters/frontpage/76fe849a4417544c5dbddcbe/page_bg_vietnamese.jpg?t=1697835815'), linear-gradient(to right, rgb(56, 66, 65) 50%, rgb(56, 66, 65) 50%);
+}
+
+.home_page_content {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 234px;
+    height: 66px;
+}
+
+div#store_header .content {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    z-index: 300;
+}
+
+div#store_header {
+    min-width: 940px;
+    height: 66px;
+    position: relative;
+    top: -80px;
+}
+
+div#store_controls {
+    top: 8px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: right;
+    z-index: 300;
+    font-size: 11px;
+}
+
+.cart_status_flex {
+    display: flex;
+}
+
+#cart_status_data .store_header_btn_green {
+    background-position: -34px 30px;
+}
+
+div.store_header_btn {
+    box-shadow: 0 0 3px #000;
+    height: 20px;
+    position: relative;
+    margin-left: 1px;
+    border-radius: 1px;
+    float: left;
+}
+
+.store_header_btn_green {
+    background-image: url(/public/images/v6/storemenu/background_cart.jpg);
+    background-color: rgba( 164, 208, 7, 0.4 );
+}
+
+.store_header_btn_green a {
+    color: #a4d007;
+}
+
+a.store_header_btn_content {
+    display: inline-block;
+    padding: 0 25px;
+    margin: 0 1px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#store_nav_area {
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 24px;
+    height: 49px;
+}
+
+#store_nav_area .store_nav_bg {
+    height: 35px;
+    margin: 7px 0;
+    background: rgba( 103, 193, 245, 0.4 )
+
+}
+
+.store_nav {
+    height: 35px;
+    display: flex;
+}
+.store_nav .tab {
+    padding: 1px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-right: none;
+    white-space: nowrap;
+}
+
+.store_nav .tab > span {
+    color: #e5e5e5;
+    font-size: 13px;
+    line-height: 34px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 0 15px;
+    display: block;
+}
+
+.store_nav .search_flex_spacer {
+    flex: 1;
+    width: 20px;
+}
+
+.store_nav .search_area {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 210px;
+}
+
+div#store_search {
+    float: none;
+    padding: 3px 4px 2px;
+    height: 30px;
+}
+
+form {
+    display: block;
+}
+
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial
+}
+
+.searchbox {
+    background-image: none;
+    background-color: #316282;
+    border-radius: 3px;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 0px;
+    outline: none;
+    height: 27px;
+    padding: 0px 6px;
+    width: auto;
+    z-index: 150;
+    cursor: text;
+    position: relative;
+}
+
+.searchbox input {
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+    width: calc(100% - 25px -8px);
+    outline: none;
+    line-height: 26px;
+}
+
+.searchbox input.default {
+    color: #0e1c25;
+    font-size: 14px;
+    margin-top: 1px;
+    text-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.1);
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+a#store_search_link {
+    position: absolute;
+    right: 2px;
+    top: 0;
+}
+
+a#store_search_link img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    background-image: url(/public/images/v6/search_icon_btn.png);
+}
+
+a.pulldown_desktop {
+    display: inline;
+    color: #e5e5e5;
+}
+
+.home_page_takeover_link {
+position: relative;
+}
+
+.home_page_takeover_link a {
+    display: block;
+}
+.home_page_takeover_link img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.home_cluster_ctn {
+    background: url(/public/images/v6/home/cluster_bg.png?v=1) bottom center no-repeat;
+    padding-bottom: 22px;
+    position: relative;
+}
+
+.home_ctn {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: red;
+    margin: 0 0 10px;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    padding-top: 2px;
+}
+
+#display {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    border: 1px solid orange;
+    z-index: 100;
+    left: 750px;
+}
+
+
+#display .game_wrapper {
+    width: 270px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    border-radius: 5px;
+    float: left;
+}
+
+#display .game_wrapper .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#display .game_wrapper .cover img {
+    object-fit: contain;
+}
+#display .game_wrapper .cover img:hover {
+    filter: brightness(150%);
+}
+
+#display .game_wrapper .game_info {
+display: flex;
+justify-content: space-evenly;
+font-family: "Motiva Sans", Sans-serif;
+font-size: 1.2em;
+background: linear-gradient( -45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95% );
+height: 45px;
+align-items: center;
+}
+
+#display .game_info p {
+    padding: 5px;
+    color: #acdbf5;
+}
+
+/* --------------------Footer----------------------------- */
+#footer_spacer .small_footer {
+    height: 250px;
+    position: relative;
+    top: 1000px;
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0px;
+    right: 0px;
+    padding: 16px 0 60px 0;
+    margin: 0px;
+    background: #171a21;
+
+}
+#footer .small_footer {
+    position: relative;
+    top: auto;
+    bottom: auto;
+}
+
+#footer .footer_content {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+#footer .rule {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+
+#footer #footer_logo_steam {
+    float: right;
+    padding-top: 2px;
+}
+
+#footer #footer_logo {
+    float: left;
+    padding-top: 2px;
+}
+
+#footer #footer_logo img {
+    height: 25px;
+    width: auto;
+}
+
+#footer #footer_text {
+    float: left;
+    margin-left: 12px;
+    color:  #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#footer #footer_text a {
+    color: #C6D4DF;
+}
+
+#footer #footer_text a:hover {
+    color: #ffffff;
+}
+
+#footer .valve_links {
+    margin-top: 8px;
+    float: left;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #61686D;
+}
+
+#footer .valve_links img {
+    vertical-align: bottom;
+}
